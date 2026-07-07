@@ -1,0 +1,59 @@
+/* VARIABILI */
+:root {
+    --hotel-primary: #ff6b35;
+    --hotel-primary-dark: #e55a2b;
+}
+
+/* GLOBAL */
+body {
+    padding-top: 3rem;
+    color: #5a5a5a;
+    font-family: 'Inter', sans-serif;
+}
+
+/* CAROUSEL */
+.carousel {
+    margin-bottom: 4rem;
+}
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+    object-fit: cover;
+}
+
+/* BOTTONI */
+.btn-primary {
+    background-color: var(--hotel-primary);
+    border-color: var(--hotel-primary);
+}
+.btn-primary:hover {
+    background-color: var(--hotel-primary-dark);
+    border-color: var(--hotel-primary-dark);
+}
+
+/* RESPONSIVE */
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 24rem;
+    }
+    .carousel-item > img {
+        height: 24rem;
+    }
+}

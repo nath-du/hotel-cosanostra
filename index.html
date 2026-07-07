@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Cosanostra</title>
+
+    <!-- Bootstrap 5 + Icone -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-building"></i> Hotel Cosanostra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Prezzi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Prenota</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light btn-sm ms-2" href="#"><i class="bi bi-calendar-check"></i> Prenota ora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO (CAROUSEL) -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100" alt="Hotel vista mare">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Il tuo rifugio sul mare</h1>
+                        <p>VTi copriamo dagli sbirri e c'hai pure vista mare</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Prenota subito</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://imgs.search.brave.com/ZQ9OfA44FxfJ52k_8eWdMjtoWyhdfq6DEgx25Uyy8VA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL3Bob3RvLW8v/MDIvY2UvZTUvZDgv/ZmFyby1yb3Nzby5q/cGc" class="d-block w-100" alt="Piscina panoramica">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Piscina panoramica</h1>
+                        <p>La nostra piscina panoramica </p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Scopri di più</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://imgs.search.brave.com/OiRdu5R2MyGzWnNzjCcTdjus9C8Gs97p81AfJ_C1MyI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2NhdHRpZGlndXN0/by5pdC93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wNi9wYWNj/aGVyaS1hbGxhLURh/LVZpdHRvcmlvLTEy/ODB4ODUzLmpwZw" class="d-block w-100" alt="Cena elegante">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Gastronomia raffinata</h1>
+                        <p>Piatti gourmet preparati da zio peppe</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Prenota un tavolo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Precedente</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Prossimo</span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
