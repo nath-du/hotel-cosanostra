@@ -1,17 +1,22 @@
-/* VARIABILI */
+/* ============================================================
+   VARIABILI
+   ============================================================ */
 :root {
     --hotel-primary: #ff6b35;
     --hotel-primary-dark: #e55a2b;
+    --hotel-bg-light: #f8f6f3;
+    --hotel-text-muted: #5a5a5a;
 }
 
-/* GLOBAL */
+/* GLOBAL STYLES */
 body {
     padding-top: 3rem;
+    padding-bottom: 3rem;
     color: #5a5a5a;
     font-family: 'Inter', sans-serif;
 }
 
-/* CAROUSEL */
+/* CUSTOMIZE THE CAROUSEL */
 .carousel {
     margin-bottom: 4rem;
 }
@@ -31,7 +36,62 @@ body {
     object-fit: cover;
 }
 
-/* BOTTONI */
+/* MARKETING CONTENT */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* Service icons (custom) */
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 107, 53, 0.1);
+    color: var(--hotel-primary);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+.service-icon:hover {
+    background: var(--hotel-primary);
+    color: #fff;
+    transform: scale(1.08);
+}
+
+/* FEATURETTES */
+.featurette-divider {
+    margin: 5rem 0;
+}
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+}
+.featurette-heading .badge {
+    font-size: 0.8rem;
+    vertical-align: middle;
+}
+
+/* PRENOTA CARD */
+.card {
+    border-radius: 16px;
+}
+.card .form-control:focus,
+.card .form-select:focus {
+    border-color: var(--hotel-primary);
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.25);
+}
 .btn-primary {
     background-color: var(--hotel-primary);
     border-color: var(--hotel-primary);
@@ -41,12 +101,48 @@ body {
     border-color: var(--hotel-primary-dark);
 }
 
+/* TOAST */
+.toast-booking {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #1a1a2e;
+    color: #fff;
+    padding: 1.2rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    border-left: 5px solid var(--hotel-primary);
+    transform: translateY(120px);
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 9999;
+    max-width: 400px;
+    font-size: 0.95rem;
+}
+.toast-booking.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+.toast-booking i {
+    color: var(--hotel-primary);
+    margin-right: 12px;
+    font-size: 1.4rem;
+}
+
 /* RESPONSIVE */
 @media (min-width: 40em) {
     .carousel-caption p {
         margin-bottom: 1.25rem;
         font-size: 1.25rem;
         line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
     }
 }
 @media (max-width: 768px) {
@@ -55,5 +151,8 @@ body {
     }
     .carousel-item > img {
         height: 24rem;
+    }
+    .featurette-heading {
+        font-size: 2rem;
     }
 }
